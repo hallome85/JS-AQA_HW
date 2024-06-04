@@ -72,12 +72,13 @@ console.log(numberOfEmpties + numberOfStars);
 
 let ourNumber = 1;
 while (ourNumber > 0 && ourNumber <= 100){{            //while сначала проверяет входные данные на соответствие и выводит результат, а потом делает следующий шаг. Поэтому формула шага в конце
-    if (ourNumber % 3 === 0) {
+ if (ourNumber % 5 === 0 && ourNumber % 3 ===0) {
+        console.log("Число "+ ourNumber + " делится без остатка на 5 и на 3")
+   else if (ourNumber % 3 === 0) {
         console.log("Число "+ ourNumber + " делится без остатка на 3");}
 else if (ourNumber % 5 === 0) {
     console.log("Число "+ ourNumber + " делится без остатка на 5");}
-    else if (ourNumber % 5 === 0 && ourNumber % 3 ===0) {
-        console.log("Число "+ ourNumber + " делится без остатка на 5 и на 3");}
+    ;}
         else  {
             console.log("Просто число");}}
         ourNumber++;
